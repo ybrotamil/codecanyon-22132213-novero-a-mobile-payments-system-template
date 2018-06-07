@@ -26,4 +26,8 @@ export class BoardingpointPage {
     this.viewCtrl.dismiss();
   }
 
+next(){
+  this.navCtrl.push("BoardinginfoPage");
+}
+
 }
