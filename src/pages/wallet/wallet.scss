@@ -1,0 +1,162 @@
+page-wallet {
+  .nav_header_title{
+    width: calc(100% - 180px) !important;
+  }
+  .wallet_wrapper{
+    width: 100%;
+    padding-top: 20px;
+    h6{
+      text-align: center;
+      color: #b1b1b1;
+      font-weight:400;
+      margin:0px;
+    }
+    h1{
+      text-align: center;
+      color: #431e5f;
+      margin:0px;
+      font-weight:300;
+      font-size: 75px;
+    }
+    h4{
+      color: #696969;
+      text-align: center;
+      margin:0px;
+      font-size: 18px;
+    }
+    button{
+      height:35px;
+      border-radius: 20px;
+      color: #fff;
+      padding-left: 25px;
+      padding-right:25px;
+      text-transform: capitalize;
+      margin:5px;
+    }
+    .pay_now{
+      background:#1f5282;
+    }
+    .add_money{
+      background:#cd2e63;
+    }
+    .wallet_tab_bay{
+      width:100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      ul{
+        margin:0px;
+        padding:0px;
+        text-align: center;
+        li{
+          list-style: none;
+          display: inline-block;
+          color: #949494;
+          font-size: 18px;
+          padding-left:20px;
+          padding-right: 20px;
+          text-align: left;
+          hr{
+            border:2px solid #fff;
+            width:30%;
+            height:0px;
+            border-radius:20px;
+            margin-left:0px;
+          }
+        }
+        .active{
+          color: #431e5f;
+          font-weight: 600;
+          hr{
+            border:2px solid #3df6ef;
+            width:30%;
+            height:0px;
+            border-radius:20px;
+            margin-left:0px;
+          }
+        }
+      }
+    }
+    .wallet_tab_content{
+      width: 100%;
+      ul{
+        padding:0px;
+        margin:0px;
+        li{
+          list-style: none;
+          width:100%;
+          border-bottom:1px solid #cecece;
+          padding: 15px;
+          padding-left: 20px;
+          padding-right:20px;
+          h4{
+            margin:0px;
+            padding:0px;
+            text-align: left;
+            color: #606060;
+            font-weight: 400;
+            font-size: 16px;
+            padding-bottom:15px;
+          }
+          .payment_circle{
+            width:55px;
+            height:55px;
+            border:1px solid #cccccc;
+            border-radius: 50%;
+            float: left;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+            background-size: 25px !important;
+          }
+          .credit{
+            background: url("../assets/imgs/credit.png");
+          }
+          .debit{
+            background: url("../assets/imgs/debit.png");
+          }
+          .payment_detail{
+            float: left;
+            width:calc(100% - 185px);
+            padding-left: 15px;
+            h5{
+              margin:0px;
+              padding:0px;
+              text-align: left;
+              color: #606060;
+              font-weight: 400;
+              padding-bottom: 2px;
+              font-size: 16px;
+            }
+            h6{
+              margin:0px;
+              padding:0px;
+              text-align: left;
+              color: #a2a2a2;
+              font-weight: 400;
+              padding-bottom: 2px;
+              font-size: 17px;
+            }
+            p{
+              margin:0px;
+              padding:0px;
+              text-align: left;
+              color: #b7b7b7;
+              font-weight: 400;
+              letter-spacing: 4px;
+              font-size: 12px;
+            }
+          }
+          .payment_price{
+            width:130px;
+            float:right;
+            text-align: right;
+            strong{
+              color: #494848;
+              font-size: 16px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

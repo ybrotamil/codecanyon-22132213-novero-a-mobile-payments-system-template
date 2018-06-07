@@ -1,0 +1,49 @@
+page-tabs {
+    
+   
+}
+
+    .ion-md-home{width:50px;height:50px;background:url('../assets/imgs/menu1.png') !important;background-position: center !important;background-size: 27px !important;background-repeat: no-repeat !important;}
+    .ion-md-home:before{content:none;}
+    .ion-ios-home{width:50px;height:50px;background:url('../assets/imgs/menu1.png') !important;background-position: center !important;background-size: 27px !important;background-repeat: no-repeat !important;}
+    .ion-ios-home:before{content:none;}
+
+    .ion-md-document{width:50px;height:50px;background:url('../assets/imgs/menu2.png') !important;background-position: center !important;background-size: 27px !important;background-repeat: no-repeat !important;}
+    .ion-md-document:before{content:none;}
+    .ion-ios-document{width:50px;height:50px;background:url('../assets/imgs/menu2.png') !important;background-position: center !important;background-size: 27px !important;background-repeat: no-repeat !important;}
+    .ion-ios-document:before{content:none;}
+
+    .ion-md-briefcase{width:50px;height:50px;background:url('../assets/imgs/menu3.png') !important;background-position: center !important;background-size: 27px !important;background-repeat: no-repeat !important;}
+    .ion-md-briefcase:before{content:none;}
+    .ion-ios-briefcase{width:50px;height:50px;background:url('../assets/imgs/menu3.png') !important;background-position: center !important;background-size: 27px !important;background-repeat: no-repeat !important;}
+    .ion-ios-briefcase:before{content:none;}
+
+    .ion-md-card{width:50px;height:50px;background:url('../assets/imgs/menu4.png') !important;background-position: center !important;background-size: 27px !important;background-repeat: no-repeat !important;}
+    .ion-md-card:before{content:none;}
+    .ion-ios-card{width:50px;height:50px;background:url('../assets/imgs/menu4.png') !important;background-position: center !important;background-size: 27px !important;background-repeat: no-repeat !important;}
+    .ion-ios-card:before{content:none;}
+
+    .ion-md-person{width:50px;height:50px;background:url('../assets/imgs/menu5.png') !important;background-position: center !important;background-size: 27px !important;background-repeat: no-repeat !important;}
+    .ion-md-person:before{content:none;}
+    .ion-ios-person{width:50px;height:50px;background:url('../assets/imgs/menu5.png') !important;background-position: center !important;background-size: 27px !important;background-repeat: no-repeat !important;}
+    .ion-ios-person:before{content:none;}
+
+
+    .tab-button-icon{
+        color: #393536 !important;
+    }
+    .tab-button{
+        border-bottom:3px solid transparent;
+        .tab-button-icon{
+            border-bottom:5px transparent;
+            position: relative;
+            top: 4px;
+        }
+    }
+    .tab-button[aria-selected=true]{
+        .tab-button-icon{
+            border-bottom:5px solid #da1c5c;
+        }
+    }
+
+

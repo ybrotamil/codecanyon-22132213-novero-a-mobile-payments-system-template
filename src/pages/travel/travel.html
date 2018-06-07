@@ -1,0 +1,78 @@
+<ion-header>
+    <div class="nav_header nav_white_header">
+        <button class="nav_btn nav_back_dark floatLeft" (click)="back()">
+        </button>
+        <div class="nav_header_title floatLeft">
+            <h5>Travel</h5>
+        </div>
+        <button class="nav_btn nav_search_dark floatRight">
+          </button>
+        <div class="clear"></div>
+    </div>
+  </ion-header>
+<ion-content padding>
+  <div class="travel_wrapper">
+    <div class="offer_slider">
+        <ion-slides loop="true" autoplay="2000"speed="1000" slidesPerView="1.5" spaceBetween="5px">
+            <ion-slide>
+              <img src="../../assets/imgs/offer1.png">
+            </ion-slide>
+            <ion-slide>
+              <img src="../../assets/imgs/offer2.png">
+            </ion-slide>
+            <ion-slide>
+              <img src="../../assets/imgs/offer3.png">
+            </ion-slide>
+        </ion-slides>
+    </div>
+    <div class="travel_tab_bay">
+        <ul>
+            <li [class.active]="tab == 'flight'" (click)="tab_swap('flight')">Flight
+                <hr>
+            </li>
+            <li [class.active]="tab == 'bus'" (click)="tab_swap('bus')">Bus
+                <hr>
+            </li>
+            <li [class.active]="tab == 'train'" (click)="tab_swap('train')">Train
+                <hr>
+            </li>
+            <li [class.active]="tab == 'cab'" (click)="tab_swap('cab')">Cab
+                <hr>
+            </li>
+        </ul>
+    </div>
+    <div class="travel_tab_content" [hidden]="tab !='flight'">
+        <div class="relative">
+            <div class="arrow">
+            </div>
+            <ion-input type="text" placeholder="From" class="from"></ion-input>
+            <ion-input type="text" placeholder="To" class="to"></ion-input>
+            <h6>DEPARTURE DATE</h6>
+            <ion-item>
+              <ion-datetime displayFormat="DD-MM-YYYY" placeholder="Date"></ion-datetime>
+            </ion-item>
+        </div>
+    </div>
+    <div class="travel_tab_content" [hidden]="tab !='bus'">
+        <div class="on_demo">
+            <img src="../../assets/imgs/error.png"><br>
+            This content is not available on demo
+          </div>
+    </div>
+    <div class="travel_tab_content" [hidden]="tab !='train'">
+        <div class="on_demo">
+            <img src="../../assets/imgs/error.png"><br>
+            This content is not available on demo
+          </div>
+    </div>
+    <div class="travel_tab_content" [hidden]="tab !='cab'">
+        <div class="on_demo">
+            <img src="../../assets/imgs/error.png"><br>
+            This content is not available on demo
+          </div>
+    </div>
+  </div>
+</ion-content>
+<ion-footer padding>
+<button ion-button class="login_btn" (click)="search()">Search Ride</button>
+</ion-footer>

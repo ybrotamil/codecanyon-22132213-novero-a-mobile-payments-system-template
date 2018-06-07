@@ -1,0 +1,37 @@
+<ion-header class="theme_background">
+    <div class="nav_header">
+      <button ion-button class="nav_btn floatLeft nav_back" (click)="back()"></button>
+      <div class="nav_header_title floatLeft">
+        <h5>Pay</h5>
+      </div>
+      <button ion-button class="nav_btn floatRight nav_option"></button>
+      <button ion-button class="nav_btn floatRight nav_search"></button>
+      <div class="clear"></div>
+    </div>
+</ion-header>
+<ion-content padding>
+  <div class="pay_wrapper">
+    <ul>
+      <li>
+        <div class="pay_div">
+          <img src="../../assets/imgs/bank.png">
+        </div>
+        <div class="pay_detail">
+          <h5>Transfer balance to Bank</h5>
+          <button class="transfer_btn" (click)="transfer()">TRANSFER</button>
+        </div>
+        <div class="clear"></div>
+      </li>
+      <li>
+          <div class="pay_div">
+            <img src="../../assets/imgs/tofriend.png">
+          </div>
+          <div class="pay_detail">
+            <h5>Transfer to a friend</h5>
+            <button class="transfer_btn" (click)="transferfriend()">TRANSFER</button>
+          </div>
+          <div class="clear"></div>
+        </li>
+    </ul>
+  </div>
+</ion-content>

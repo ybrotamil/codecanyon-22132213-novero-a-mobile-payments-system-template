@@ -1,0 +1,140 @@
+<ion-header>
+    <div class="nav_header nav_white_header">
+        <button class="nav_btn nav_back_dark floatLeft" (click)="back()">
+        </button>
+        <div class="nav_header_title floatLeft">
+            <h5>Fashion Store</h5>
+        </div>
+        <button class="nav_btn floatRight nav_cart_dark">
+          </button>
+        <button class="nav_btn floatRight nav_search_dark">
+            </button>
+        <div class="clear"></div>
+    </div>
+</ion-header>
+<ion-content>
+    <div class="fashion_store_wrapper">
+        <div class="fashion_banner_slider">
+            <ion-slides loop="true" pager="true" zoom="true" autoplay="2000" effect="coverflow" speed="1000" slidesPerView="1">
+                <ion-slide>
+                    <img src="../../assets/imgs/fashion_poster.png" (click)="product()">
+                </ion-slide>
+                <ion-slide>
+                    <img src="../../assets/imgs/fashion_poster2.png" (click)="product()">
+                </ion-slide>
+                <ion-slide>
+                    <img src="../../assets/imgs/fashion_poster3.png" (click)="product()">
+                </ion-slide>
+            </ion-slides>
+        </div>
+        <div class="fashion_header">
+            <h6>TOP BRANDS</h6>
+            <button ion-button class="seeall seeall_blue" (click)="seemore()">See all</button>
+            <div class="clear"></div>
+        </div>
+        <div class="top_brand_slider">
+            <ion-slides loop="true" autoplay="1000" speed="1000" slidesPerView="2.5">
+                <ion-slide (click)="product()">
+                    <div class="top_brand_circle">
+                        <img src="../../assets/imgs/p1.png">
+                    </div>
+                    <h5>Adidas</h5>
+                    <p>Starting at 80 $</p>
+                </ion-slide>
+                <ion-slide (click)="product()">
+                    <div class="top_brand_circle">
+                        <img src="../../assets/imgs/p2.png">
+                    </div>
+                    <h5>Adidas</h5>
+                    <p>Starting at 80 $</p>
+                </ion-slide>
+                <ion-slide (click)="product()">
+                    <div class="top_brand_circle">
+                        <img src="../../assets/imgs/p3.png">
+                    </div>
+                    <h5>Adidas</h5>
+                    <p>Starting at 80 $</p>
+                </ion-slide>
+                <ion-slide (click)="product()">
+                    <div class="top_brand_circle">
+                        <img src="../../assets/imgs/p1.png">
+                    </div>
+                    <h5>Adidas</h5>
+                    <p>Starting at 80 $</p>
+                </ion-slide>
+                <ion-slide (click)="product()">
+                    <div class="top_brand_circle">
+                        <img src="../../assets/imgs/p2.png">
+                    </div>
+                    <h5>Adidas</h5>
+                    <p>Starting at 80 $</p>
+                </ion-slide>
+                <ion-slide (click)="product()">
+                    <div class="top_brand_circle">
+                        <img src="../../assets/imgs/p3.png">
+                    </div>
+                    <h5>Adidas</h5>
+                    <p>Starting at 80 $</p>
+                </ion-slide>
+            </ion-slides>
+        </div>
+        <div class="fashion_header">
+            <h6>TOP TRENDS</h6>
+            <button ion-button class="seeall seeall_blue" (click)="seemore()">See all</button>
+            <div class="clear"></div>
+        </div>
+        <div class="fashion_store_slider">
+            <ion-slides loop="true" pager="false" zoom="true" effect="slide" speed="500" slidesPerView="1.5" spaceBetween="5">
+                <ion-slide (click)="product()">
+                    <img src="../../assets/imgs/poster1.png">
+                </ion-slide>
+                <ion-slide (click)="product()">
+                    <img src="../../assets/imgs/poster2.png">
+                </ion-slide>
+            </ion-slides>
+        </div>
+        <div class="fashion_store_slider">
+            <ion-slides loop="true" pager="false" zoom="true" effect="slide" speed="500" slidesPerView="2" spaceBetween="5">
+                <ion-slide (click)="product()">
+                    <img src="../../assets/imgs/poster3.png">
+                </ion-slide>
+                <ion-slide (click)="product()">
+                    <img src="../../assets/imgs/fashion_poster3.png">
+                </ion-slide>
+            </ion-slides>
+        </div>
+        <div class="fashion_header">
+            <h6>MOST VIEWED</h6>
+            <button ion-button class="seeall seeall_pink" (click)="seemore()">See all</button>
+            <div class="clear"></div>
+        </div>
+        <div class="fashion_most_viewed_slider">
+            <ion-slides loop="true" pager="false" zoom="true" effect="slide" speed="500" slidesPerView="3" spaceBetween="10">
+                <ion-slide (click)="product()">
+                    <div class="fav_circle fav"></div>
+                    <img src="../../assets/imgs/product2.png">
+                    <h5>Voyl bl</h5>
+                    <p>Get at<strong>$30</strong> </p>
+                </ion-slide>
+                <ion-slide (click)="product()">
+                    <div class="fav_circle not_fav"></div>
+                    <img src="../../assets/imgs/product3.png">
+                    <h5>Palace</h5>
+                    <p>Get at<strong>$27</strong> </p>
+                </ion-slide>
+                <ion-slide (click)="product()">
+                    <div class="fav_circle fav"></div>
+                    <img src="../../assets/imgs/product4.png">
+                    <h5>Sanfran</h5>
+                    <p>Get at <strong>$28</strong> </p>
+                </ion-slide>
+                <ion-slide (click)="product()">
+                    <div class="fav_circle not_fav"></div>
+                    <img src="../../assets/imgs/product5.png">
+                    <h5>Fostelo</h5>
+                    <p>Get at <strong>$32</strong> </p>
+                </ion-slide>
+            </ion-slides>
+        </div>
+    </div>
+</ion-content>

@@ -1,0 +1,58 @@
+<ion-header>
+    <div class="nav_header nav_white_header">
+        <button class="nav_btn nav_back_dark floatLeft" (click)="back()">
+        </button>
+        <div class="nav_header_title floatLeft">
+            <h5>Address book</h5>
+        </div>
+        <button class="nav_btn floatRight nav_cart_dark">
+          </button>
+        <button class="nav_btn floatRight nav_search_dark">
+            </button>
+        <div class="clear"></div>
+    </div>
+</ion-header>
+<ion-content padding>
+  <div class="address_wrapper">
+      <div class="address">
+          <h5 class="floatLeft">DELIVERY ADDRESS</h5>
+          <ul>
+            <li>
+              <div class="clear"></div>
+              <br>
+              <div class="loc_icon floatLeft">
+              </div>
+              <div class="address_bay floatRight">
+                <h6>HOME</h6>
+                <p>
+                    Techware solution, Carnival Infopark, Phase 1, Kusumagiri (po), Kakkanad, Kochi
+                </p>
+                <button ion-button class="c_btn edit">Edit</button>
+                <button ion-button class="c_btn delete">Delete</button>
+                <button ion-button class="c_btn default">Set us Default</button>
+              </div>
+              <div class="clear"></div>
+            </li>
+            <li>
+                <div class="clear"></div>
+                <br>
+                <div class="loc_icon floatLeft">
+                </div>
+                <div class="address_bay floatRight">
+                  <h6>HOME</h6>
+                  <p>
+                      Techware solution, Carnival Infopark, Phase 1, Kusumagiri (po), Kakkanad, Kochi
+                  </p>
+                  <button ion-button class="c_btn edit">Edit</button>
+                  <button ion-button class="c_btn delete">Delete</button>
+                  <button ion-button class="c_btn default">Set us Default</button>
+                </div>
+                <div class="clear"></div>
+              </li>
+          </ul>
+      </div>
+  </div>
+</ion-content>
+<ion-footer padding>
+  <button ion-button class="login_btn" (click)="addaddress()">ADD NEW ADDRESS</button>
+</ion-footer>

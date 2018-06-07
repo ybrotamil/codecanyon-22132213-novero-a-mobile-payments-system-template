@@ -1,0 +1,48 @@
+<ion-content>
+    <div class="nav_header nav_white_header">
+        <button class="nav_btn nav_back_dark floatLeft" (click)="dismiss()">
+        </button>
+        <div class="nav_header_title floatLeft">
+            <h5>Edit Profile</h5>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="edit_profile_wrapper" padding>
+        <div class="editprofile_banner">
+            <div class="edit_profile_circle">
+                <div class="edit_overlay"></div>
+            </div>
+        </div>
+        <div class="edit_profile_content">
+            <ion-item>
+                <ion-input placeholder="Ann Alexander">
+                </ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input placeholder="dummy@gmail.com">
+                </ion-input>
+            </ion-item>
+            <div class="radio_div" radio-group>
+                <ion-row>
+                    <ion-col>
+                        <ion-radio value="male" checked class="floatLeft"></ion-radio>
+                        <ion-label class="floatLeft">Male</ion-label>
+                        <div class="clear"></div>
+                    </ion-col>
+                    <ion-col>
+                        <ion-radio value="female" class="floatLeft"></ion-radio>
+                        <ion-label class="floatLeft">Female</ion-label>
+                        <div class="clear"></div>
+                    </ion-col>
+                </ion-row>
+            </div>
+            <ion-item>
+                <ion-input placeholder="Phone number">
+                </ion-input>
+            </ion-item>
+        </div>
+    </div>
+</ion-content>
+<ion-footer padding>
+    <button ion-button class="login_btn">SAVE</button>
+</ion-footer>

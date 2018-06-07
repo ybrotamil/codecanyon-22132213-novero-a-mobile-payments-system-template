@@ -1,0 +1,37 @@
+
+<ion-content class="landing_bg">
+    <div class="landing_logo">
+        <img src="assets/imgs/logo.png">
+    </div>
+    <ion-slides (ionSlideDidChange)="slideChanged()" pager="true">
+        <ion-slide>
+          <div class="landing_wrapper">
+            <div class="landing_content">
+                <img src="assets/imgs/landing1.png">
+                <p><strong>novero</strong> for Mobile Recharge, Bill payment, DTH recharge, Metro Recharge</p>
+            </div>
+          </div>
+        </ion-slide>
+        <ion-slide>
+            <div class="landing_wrapper">
+                <div class="landing_content">
+                    <img src="assets/imgs/landing2.png">
+                    <p><strong>novero</strong>give coupon codes and offers to our users on every Purchases or Transactions.</p>
+                </div>
+              </div>
+        </ion-slide>
+        <ion-slide>
+            <div class="landing_wrapper">
+                <div class="landing_content">
+                    <img src="assets/imgs/landing3.png">
+                    <p><strong>novero</strong> give coupon codes and offers to our users on every Purchases or Transactions.</p>
+                </div>
+              </div>
+        </ion-slide>
+      </ion-slides>
+      <div class="landing_bottom">
+        <button ion-button class="skip bottom_btn" [hidden] = "currentIndex == 2"  (click)="goToNextSlide()">Skip Tour</button>
+        <button ion-button class="continue bottom_btn" [hidden] = "currentIndex != 2" (click)="login()">Continue</button>
+       </div>
+</ion-content>
+

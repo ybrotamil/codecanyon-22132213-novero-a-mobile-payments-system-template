@@ -1,0 +1,58 @@
+<ion-header>
+  <div class="nav_header nav_white_header">
+      <button class="nav_btn nav_back_dark floatLeft" (click)="back()">
+      </button>
+      <div class="nav_header_title floatLeft">
+          <h5>Evacay Travels</h5>
+          <p class="floatLeft">A/C, Dolby, Multiaxile</p>
+          <p class="floatRight">Thu, 23 Apr</p>
+          <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+</ion-header>
+
+<ion-content padding>
+    <div class="boarding_wrapper">
+      <h4>TRAVELLER INFORMATION</h4>
+      <br>
+      <div class="radio_div" radio-group>
+          <ion-row>
+            <ion-col>
+                <ion-radio value="male" checked class="floatLeft"></ion-radio>
+                <ion-label class="floatLeft">Male</ion-label>
+                <div class="clear"></div>
+            </ion-col>
+            <ion-col>
+                <ion-radio value="female"  class="floatLeft"></ion-radio>
+                <ion-label class="floatLeft">Female</ion-label>
+                <div class="clear"></div>
+            </ion-col>
+          </ion-row>
+      </div>
+      <ion-item>
+          <ion-input placeholder="Full name">
+          </ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-input placeholder="Age">
+          </ion-input>
+      </ion-item>
+      <br>
+      <h4>CONTACT INFORMATION</h4>
+      <p>Your ticket email and sms will be sent here</p>
+      <br>
+      <ion-item>
+          <ion-input placeholder="Mobile">
+          </ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-input placeholder="Email">
+          </ion-input>
+      </ion-item>
+    </div>
+</ion-content>
+
+<ion-footer padding>
+  <button ion-button class="login_btn" (click)="book()">Proceed to Book</button>
+</ion-footer>

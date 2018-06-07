@@ -1,0 +1,49 @@
+<ion-header>
+    <div class="nav_header nav_white_header">
+        <button class="nav_btn nav_back_dark floatLeft" (click)="back()">
+        </button>
+        <div class="nav_header_title floatLeft">
+            <h5>Filter By</h5>
+        </div>
+        <button class="nav_btn nav_filter_dark floatRight">
+          </button>
+        <div class="clear"></div>
+    </div>
+  </ion-header>
+<ion-content padding>
+  <div class="filter_wrapper">
+    <h4>DEPARTURE</h4>
+    <div class="filter_bay_time">
+      <ul>
+        <li>12 am to 6 am</li>
+        <li>6 am to 12 am</li>
+        <li>12 am to 6 pm</li>
+      </ul>
+    </div>
+    <br>
+    <h4>BUS TYPE</h4>
+    <ion-item>
+        <ion-select [(ngModel)]="type">
+            <ion-option value="1" selected>Type</ion-option>
+            <ion-option value="2">Air conditioned</ion-option>
+            <ion-option value="2">Non A/c</ion-option>
+            <ion-option value="2">Seater</ion-option>
+            <ion-option value="2">Sleeper</ion-option>
+            <ion-option value="2">Semi Sleeper</ion-option>
+        </ion-select>
+  </ion-item>
+  <br>
+  <h4>SELECT BUS OPERATOR</h4>
+    <ion-item>
+        <ion-select [(ngModel)]="operator">
+            <ion-option value="1" selected>Operator</ion-option>
+            <ion-option value="2">Evacay</ion-option>
+            <ion-option value="2">Blue hills</ion-option>
+        </ion-select>
+  </ion-item>
+  </div>
+</ion-content>
+<ion-footer padding>
+    <button ion-button class="login_btn" (click)="back()">Apply Filter</button>
+</ion-footer>
+

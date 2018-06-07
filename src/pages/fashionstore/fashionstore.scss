@@ -1,0 +1,209 @@
+page-fashionstore {
+    .nav_header_title {
+        width: calc(100% - 180px) !important;
+        text-align: left;
+    }
+    .fashion_store_wrapper {
+        width: 100%;
+        padding: 5px;
+        padding-top: 0px;
+        .fashion_banner_slider {
+            width: 100%;
+            .slides {
+                .swiper-container {
+                    height: 220px;
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            background: #a8a8a8;
+                            height: 200px;
+                            border-radius: 10px;
+                            .slide-zoom {
+                                width: 100%;
+                                height: 100%;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    object-position: center;
+                                    border-radius: 10px;
+                                }
+                            }
+                        }
+                    }
+                    .swiper-pagination {
+                        bottom: 0px;
+                        .swiper-pagination-bullet {}
+                        .swiper-pagination-bullet-active {
+                            background: #b40131;
+                        }
+                    }
+                }
+            }
+        }
+        .fashion_header {
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            h6 {
+                padding: 0px;
+                margin: 0px;
+                float: left;
+                color: #646464;
+                text-transform: uppercase;
+                padding: 8px;
+            }
+            .seeall {
+                float: right;
+                color: #fff;
+                height: 25px;
+                border-radius: 20px;
+                padding-left: 15px;
+                padding-right: 15px;
+                text-transform: capitalize;
+                font-weight: 400;
+            }
+            .seeall_pink {
+                background: #da1c5c;
+            }
+            .seeall_blue {
+                background: #1f5282;
+            }
+        }
+        .top_brand_slider {
+            width: 100%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            .slides {
+                .swiper-container {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            .slide-zoom {
+                                .top_brand_circle {
+                                    width: 100px;
+                                    height: 100px;
+                                    border-radius: 50%;
+                                    background: #ededed;
+                                    margin: 0 auto;
+                                    img {
+                                        top: 20px;
+                                        position: relative;
+                                        width: 100px;
+                                    }
+                                }
+                                h5 {
+                                    text-align: center;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    color: #575757;
+                                    padding-top: 15px;
+                                    font-weight: 400;
+                                }
+                                p {
+                                    text-align: center;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    color: #a3a3a3;
+                                    font-weight: 300;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                    .swiper-pagination {
+                        .swiper-pagination-bullet {}
+                        .swiper-pagination-bullet-active {}
+                    }
+                }
+            }
+        }
+        .fashion_store_slider {
+            width: 100%;
+            .slides {
+                .swiper-container {
+                    height: 205px;
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            background: #a8a8a8;
+                            height: 200px;
+                            border-radius: 10px;
+                            .slide-zoom {
+                                width: 100%;
+                                height: 100%;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    object-position: center;
+                                    border-radius: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .fashion_most_viewed_slider {
+            width: 100%;
+            .slides {
+                .swiper-container {
+                    height: 170px;
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            .slide-zoom {
+                                width: 100%;
+                                height: 100%;
+                                position: relative;
+                                .fav_circle {
+                                    width: 25px;
+                                    height: 25px;
+                                    border-radius: 50%;
+                                    position: absolute;
+                                    top: 0px;
+                                    left: 0px;
+                                    background: url("../assets/imgs/heart.png");
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    background-size: 12px;
+                                }
+                                .fav {
+                                    background-color: #da1c5c;
+                                }
+                                .not_fav {
+                                    background-color: #dcdcdc;
+                                }
+                                img {
+                                    width: auto;
+                                    height: 95px;
+                                    object-fit: cover;
+                                    object-position: center;
+                                    border-radius: 10px;
+                                }
+                                h5 {
+                                    text-align: center;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    color: #575757;
+                                    padding-top: 15px;
+                                    font-weight: 400;
+                                }
+                                p {
+                                    text-align: center;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    color: #a3a3a3;
+                                    font-weight: 300;
+                                    font-size: 16px;
+                                    strong {
+                                        color: #575757;
+                                        font-weight: 400;
+                                        padding-left: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

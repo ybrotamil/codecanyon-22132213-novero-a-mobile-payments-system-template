@@ -1,18 +1,112 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+<ion-header class="theme_background">
+    <div class="nav_header">
+        <button ion-button class="nav_btn floatLeft nav_menu" menuToggle></button>
+        <div class="nav_header_title floatLeft">
+            <img src="../assets/imgs/logo_white.png">
+        </div>
+        <button ion-button class="nav_btn floatRight nav_option" (click)="origin()"></button>
+        <div class="clear"></div>
+    </div>
+    <div class="nav_header">
+        <ion-searchbar class="home_search_bar" placeholder="search">
+        </ion-searchbar>
+    </div>
 </ion-header>
+<ion-content>
+    <div class="home_content">
+        <div class="home_menu_banner">
+            <ul>
+                <li (click)="mobprepaid()">
+                    <img src="../assets/imgs/item1.png">
+                    <p>Mobile<br>Prepaid</p>
+                </li>
+                <li (click)="mobprepaid()">
+                    <img src="../assets/imgs/item2.png">
+                    <p>Mobile<br>Postpaid</p>
+                </li>
+                <li (click)="electricitybill()">
+                    <img src="../assets/imgs/item3.png">
+                    <p>Electricity<br>Bill</p>
+                </li>
+                <li>
+                    <img src="../assets/imgs/item4.png">
+                    <p>DTH<br></p>
+                </li>
+                <li>
+                    <img src="../assets/imgs/item5.png">
+                    <p>Movie<br></p>
+                </li>
+                <li (click)="travel(1)">
+                    <img src="../assets/imgs/item6.png">
+                    <p>Train<br></p>
+                </li>
+                <li>
+                    <img src="../assets/imgs/item7.png">
+                    <p>Daily needs<br></p>
+                </li>
+                <li (click)="travel(2)">
+                    <img src="../assets/imgs/item8.png">
+                    <p>Flight<br></p>
+                </li>
+                <li (click)="travel(3)">
+                    <img src="../assets/imgs/item9.png">
+                    <p>Bus<br></p>
+                </li>
+                <li>
+                    <img src="../assets/imgs/item10.png">
+                    <p>Petrol<br></p>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="home_detail_contents">
+            <div class="scroll_section">
+                <ion-scroll scrollX="true" style="height:250px;">
+                    <ion-row nowrap>
+                        <ion-list>
+                            <ion-item>
+                                <ion-card>
+                                    <ion-card-content class="pink_card">
+                                        <div class="item_image">
+                                            <h3>
+                                                Fashion 12 pm<br>
+                                                <strong>SALE</strong>
+                                            </h3>
+                                            <button ion-button (click)="fashionstore()">Shop now</button>
+                                        </div>
+                                    </ion-card-content>
+                                </ion-card>
+                            </ion-item>
+                            <ion-item>
+                                <ion-card>
+                                    <ion-card-content class="blue_card">
+                                        <div class="item_image">
+                                            <h3>
+                                                <strong>50</strong>% off<br> on mobile recharging
+                                            </h3>
+                                            <button ion-button (click)="mobprepaid()">Recharge</button>
+                                        </div>
+                                    </ion-card-content>
+                                </ion-card>
+                            </ion-item>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+                        </ion-list>
+                    </ion-row>
+                </ion-scroll>
+            </div>
+        </div>
+        <div class="offer_slider">
+            <ion-slides loop="true" autoplay="2000"speed="1000" slidesPerView="1.5" spaceBetween="5px">
+                <ion-slide>
+                  <img src="../../assets/imgs/offer1.png">
+                </ion-slide>
+                <ion-slide>
+                  <img src="../../assets/imgs/offer2.png">
+                </ion-slide>
+                <ion-slide>
+                  <img src="../../assets/imgs/offer3.png">
+                </ion-slide>
+            </ion-slides>
+        </div>
+    </div>
 </ion-content>

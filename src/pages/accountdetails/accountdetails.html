@@ -1,0 +1,64 @@
+<ion-header class="theme_background">
+    <div class="nav_header">
+      <button ion-button class="nav_btn floatLeft nav_back" (click)="back()"></button>
+      <div class="nav_header_title floatLeft">
+        <h5>Account Details</h5>
+      </div>
+      <button ion-button class="nav_btn floatRight nav_option"></button>
+      <button ion-button class="nav_btn floatRight nav_search"></button>
+      <div class="clear"></div>
+    </div>
+</ion-header>
+<ion-content padding>
+    <div class="pay_wrapper">
+        <h4>Account Details</h4>
+          <div class="contact_list">
+            <h6>Saved Cards</h6>
+            <div class="cards_list" radio-group>
+              <ul>
+                <li>
+                  <ion-row>
+                    <ion-col col-1 class="check">
+                        <ion-radio value="1" ></ion-radio>
+                    </ion-col>
+                    <ion-col col-3>
+                        <ion-label>
+                          <img src="../../assets/imgs/card1.png">
+                        </ion-label>
+                    </ion-col>
+                    <ion-col col-7>
+                        <ion-label>
+                          <p>xxxxx xxxxx 7890</p>
+                          <h6>Visa</h6>
+                        </ion-label>
+                    </ion-col>
+                    <ion-col col-1 class="delete">
+                        <ion-icon name="md-create"></ion-icon>
+                    </ion-col>
+                  </ion-row>
+                </li>
+                <li>
+                    <ion-row>
+                      <ion-col col-1 class="check">
+                          <ion-radio value="2"></ion-radio>
+                      </ion-col>
+                      <ion-col col-3>
+                          <ion-label> <img src="../../assets/imgs/card2.png"></ion-label>
+                      </ion-col>
+                      <ion-col col-7>
+                          <ion-label>
+                            <p>xxxxx xxxxx 7890</p>
+                            <h6>Master Card</h6>
+                          </ion-label>
+                        </ion-col>
+                      <ion-col col-1 class="delete">
+                          <ion-icon name="md-create"></ion-icon>
+                      </ion-col>
+                    </ion-row>
+                </li>
+              </ul>
+              <button ion-button class="add_card" (click)="addcard()">ADD CARD</button>
+            </div>
+           </div>
+      </div>
+</ion-content>

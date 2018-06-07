@@ -1,0 +1,45 @@
+
+<ion-content padding class="login_bg">
+  <div class="login_content">
+    <h5>Sign up</h5>
+    <hr>
+    <ion-list>
+        <ion-item>
+            <ion-input placeholder="Name"></ion-input>
+        </ion-item>
+        <div class="radio_div" radio-group>
+          <ion-row>
+            <ion-col>
+                <ion-radio value="male" checked class="floatLeft"></ion-radio>
+                <ion-label class="floatLeft">Male</ion-label>
+                <div class="clear"></div>
+            </ion-col>
+            <ion-col>
+                <ion-radio value="female" class="floatLeft"></ion-radio>
+                <ion-label class="floatLeft">Female</ion-label>
+                <div class="clear"></div>
+            </ion-col>
+          </ion-row>
+        </div>
+        <ion-item>
+            <ion-input placeholder="Phone no"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input placeholder="Email"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input placeholder="Password" type="passsword"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button class="login_btn" (click)="signup()" >
+      Sign Up Now
+    </button>
+    <p>Not a new user? simply login below<br>
+      <br>
+      <strong>here</strong>
+    </p>
+
+  </div>
+
+</ion-content>
+

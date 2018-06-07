@@ -1,0 +1,95 @@
+<ion-header class="theme_background">
+    <div class="nav_header">
+      <button ion-button class="nav_btn floatLeft nav_back" (click)="back()"></button>
+      <div class="nav_header_title floatLeft">
+        <h5>Transfer Money</h5>
+      </div>
+      <button ion-button class="nav_btn floatRight nav_option"></button>
+      <button ion-button class="nav_btn floatRight nav_search"></button>
+      <div class="clear"></div>
+    </div>
+</ion-header>
+<ion-content padding>
+    <div class="pay_wrapper">
+      <ul>
+        <li>
+          <div class="pay_div">
+            <img src="../../assets/imgs/tofriend.png">
+          </div>
+          <div class="pay_detail">
+            <h5>Transfer to</h5>
+            <h6>Friend</h6>
+          </div>
+          <div class="balance">
+            <p>Balance</p>
+            <h6>$ 1000</h6>
+          </div>
+          <div class="clear"></div>
+        </li>
+        <button ion-button (click)="accountdetails()">Account details</button>
+        <h4>Select a friend</h4>
+        <div class="contact_list">
+          <h6>RECENT</h6>
+          <ion-scroll scrollX="true" style="height:90px;">
+              <ion-row nowrap>
+                    <li>
+                      <div class="inner_circle c1">
+                        <span>A</span>
+                      </div>
+                      <p>Adam</p>
+                    </li>
+                    <li>
+                        <div class="inner_circle c2">
+                            <span>S</span>
+                        </div>
+                        <p>Sophia</p>
+                      </li>
+                      <li>
+                          <div class="inner_circle c3">
+                              <span>A</span>
+                          </div>
+                          <p>Ann</p>
+                        </li>
+                        <li>
+                            <div class="inner_circle c4">
+                                <span>R</span>
+                            </div>
+                            <p>Rose Maria</p>
+                          </li>
+                          <li>
+                              <div class="inner_circle c5">
+                                  <span>M</span>
+                              </div>
+                              <p>Merlin</p>
+                            </li>
+                            <li>
+                                <div class="inner_circle c6">
+                                    <span>C</span>
+                                </div>
+                                <p>Corolina</p>
+                              </li>
+                              <li>
+                                  <div class="inner_circle c7">
+                                      <span>R</span>
+                                  </div>
+                                  <p>Ricky Martin</p>
+                                </li>
+                                <li>
+                                    <div class="inner_circle c8">
+                                        <span>M</span>
+                                    </div>
+                                    <p>Melissa</p>
+                                  </li>
+
+              </ion-row>
+          </ion-scroll>
+         </div>
+        <button ion-button>Select Contacts</button>
+        <h4>Amount Payable</h4>
+        <input class="amount" placeholder ="000">
+      </ul>
+    </div>
+  </ion-content>
+  <ion-footer padding>
+    <button ion-button class="transfer">TRANSFER</button>
+  </ion-footer>

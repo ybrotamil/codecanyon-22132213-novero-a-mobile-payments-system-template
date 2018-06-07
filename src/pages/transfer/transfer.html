@@ -1,0 +1,37 @@
+<ion-header class="theme_background">
+    <div class="nav_header">
+      <button ion-button class="nav_btn floatLeft nav_back" (click)="back()"></button>
+      <div class="nav_header_title floatLeft">
+        <h5>Transfer Money</h5>
+      </div>
+      <button ion-button class="nav_btn floatRight nav_option"></button>
+      <button ion-button class="nav_btn floatRight nav_search"></button>
+      <div class="clear"></div>
+    </div>
+</ion-header>
+<ion-content padding>
+    <div class="pay_wrapper">
+      <ul>
+        <li>
+          <div class="pay_div">
+            <img src="../../assets/imgs/bank.png">
+          </div>
+          <div class="pay_detail">
+            <h5>Transfer to</h5>
+            <h6>Bank</h6>
+          </div>
+          <div class="balance">
+            <p>Balance</p>
+            <h6>$ 1000</h6>
+          </div>
+          <div class="clear"></div>
+        </li>
+        <button ion-button (click)="accountdetails()">Account details</button>
+        <h4>Amount Payable</h4>
+        <input class="amount" placeholder ="000">
+      </ul>
+    </div>
+  </ion-content>
+  <ion-footer padding>
+    <button ion-button class="transfer">TRANSFER</button>
+  </ion-footer>

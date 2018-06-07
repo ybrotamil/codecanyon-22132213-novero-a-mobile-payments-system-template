@@ -1,0 +1,25 @@
+
+<ion-content padding class="login_bg">
+  <div class="login_content">
+    <div class="textCenter arrow_back">
+      <button ion-button class="" (click)="back()">
+          <ion-icon name="ios-arrow-back"></ion-icon>
+      </button>
+    </div>
+    <h5>Verify</h5>
+    <h4>Sit back and relax! </h4>
+    <h6>while we verify your mobile number</h6>
+    <hr>
+    <ion-list>
+        <ion-item>
+            <ion-input placeholder="code here"></ion-input>
+        </ion-item>
+    </ion-list>
+    <button ion-button class="login_btn" (click)="success()">
+      Verify Now
+    </button>
+    <p class="textCenter">haven't received a code yet?<br>
+      <strong>Resend</strong>
+    </p>
+  </div>
+</ion-content>

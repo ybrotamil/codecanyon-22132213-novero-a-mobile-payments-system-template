@@ -1,0 +1,169 @@
+<ion-header class="theme_background">
+    <div class="nav_header">
+        <button ion-button class="nav_btn floatLeft nav_menu" menuToggle></button>
+        <div class="nav_header_title floatLeft">
+            <h5>My Cart</h5>
+        </div>
+        <button ion-button class="nav_btn floatRight nav_option"></button>
+        <button ion-button class="nav_btn floatRight nav_search"></button>
+        <div class="clear"></div>
+    </div>
+</ion-header>
+<ion-content padding>
+    <div class="cart_item">
+        <h5 class="">ITEMS IN YOUR CART</h5>
+        <ul>
+          <li>
+            <div class="cart_left floatLeft">
+              <div class="cart_circle">
+                <img src="../../assets/imgs/pr1.png">
+              </div>
+            </div>
+            <div class="cart_right floatRight">
+              <h5>Nike Flex</h5>
+              <p>Contact running shoes</p>
+              <h4>$ 120</h4>
+              <div class="color_circle">
+                <img src="../../assets/imgs/shade1.png">
+              </div>
+              <div class="size_circle">
+                M
+              </div>
+              <div class="increment_div">
+                  <button class="sub"  (click)="sub()">-</button>
+                  <div class="counter_circle">{{count}}</div>
+                  <button class="add" (click)="add()" >+</button>
+              </div>
+              <div class="clear"></div>
+              <div class="bottom_bay">
+                  <button ion-button class="remove floatLeft">Remove</button>
+                  <button ion-button class="edit floatRight" (click)="toggleGroup(0)" [ngClass]="{active:isGroupShown(0)}">More</button>
+                  <div class="clear"></div>
+              </div>
+            </div>
+            <div class="clear"></div>
+            <div class="" *ngIf="isGroupShown(0)">
+                <div class="order_detail_content">
+                    <h6>Seller Details</h6>
+                    <div class="seller_photo">
+                      <img src="../../assets/imgs/nike.png">
+                    </div>
+                    <div class="seller_detail">
+                      <h5>Nike Authorised Dealer</h5>
+                      <p>Gurgon</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="mobile_number">
+                    <input class="" placeholder="Seller Promocode">
+                    <div class="apply">
+                      Apply
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+          </li>
+          <li>
+              <div class="cart_left floatLeft">
+                <div class="cart_circle">
+                  <img src="../../assets/imgs/pr1.png">
+                </div>
+              </div>
+              <div class="cart_right floatRight">
+                <h5>Nike Flex</h5>
+                <p>Contact running shoes</p>
+                <h4>$ 120</h4>
+                <div class="color_circle">
+                  <img src="../../assets/imgs/shade1.png">
+                </div>
+                <div class="size_circle">
+                  M
+                </div>
+                <div class="increment_div">
+                    <button class="sub"  (click)="sub()">-</button>
+                    <div class="counter_circle">{{count}}</div>
+                    <button class="add" (click)="add()" >+</button>
+                </div>
+                <div class="clear"></div>
+                <div class="bottom_bay">
+                    <button ion-button class="remove floatLeft">Remove</button>
+                    <button ion-button class="edit floatRight" (click)="toggleGroup(1)" [ngClass]="{active:isGroupShown(1)}">More</button>
+                    <div class="clear"></div>
+                </div>
+              </div>
+              <div class="clear"></div>
+              <div class="" *ngIf="isGroupShown(1)">
+                  <div class="order_detail_content">
+                      <h6>Seller Details</h6>
+                      <div class="seller_photo">
+                        <img src="../../assets/imgs/nike.png">
+                      </div>
+                      <div class="seller_detail">
+                        <h5>Nike Authorised Dealer</h5>
+                        <p>Gurgon</p>
+                      </div>
+                      <div class="clear"></div>
+                  </div>
+                  <div class="mobile_number">
+                      <input class="" placeholder="Seller Promocode">
+                      <div class="apply">
+                        Apply
+                      </div>
+                      <div class="clear"></div>
+                  </div>
+              </div>
+            </li>
+
+            <li>
+                <div class="cart_left floatLeft">
+                  <div class="cart_circle">
+                    <img src="../../assets/imgs/pr1.png">
+                  </div>
+                </div>
+                <div class="cart_right floatRight">
+                  <h5>Nike Flex</h5>
+                  <p>Contact running shoes</p>
+                  <h4>$ 120</h4>
+                  <div class="color_circle">
+                    <img src="../../assets/imgs/shade1.png">
+                  </div>
+                  <div class="size_circle">
+                    M
+                  </div>
+                  <div class="increment_div">
+                      <button class="sub"  (click)="sub()">-</button>
+                      <div class="counter_circle">{{count}}</div>
+                      <button class="add" (click)="add()" >+</button>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="bottom_bay">
+                      <button ion-button class="remove floatLeft">Remove</button>
+                      <button ion-button class="edit floatRight" (click)="toggleGroup(2)" [ngClass]="{active:isGroupShown(2)}">More</button>
+                      <div class="clear"></div>
+                  </div>
+                </div>
+                <div class="clear"></div>
+                <div class="" *ngIf="isGroupShown(2)">
+                    <div class="order_detail_content">
+                        <h6>Seller Details</h6>
+                        <div class="seller_photo">
+                          <img src="../../assets/imgs/nike.png">
+                        </div>
+                        <div class="seller_detail">
+                          <h5>Nike Authorised Dealer</h5>
+                          <p>Gurgon</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="mobile_number">
+                        <input class="" placeholder="Seller Promocode">
+                        <div class="apply">
+                          Apply
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+              </li>
+        </ul>
+    </div>
+</ion-content>

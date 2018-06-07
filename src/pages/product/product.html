@@ -1,0 +1,147 @@
+<ion-header>
+    <div class="nav_header nav_white_header">
+        <button class="nav_btn nav_back_dark floatLeft" (click)="back()">
+        </button>
+        <div class="nav_header_title floatLeft">
+            <h5>Product Name</h5>
+        </div>
+        <button class="nav_btn floatRight nav_cart_dark">
+          </button>
+        <button class="nav_btn floatRight nav_search_dark">
+            </button>
+        <div class="clear"></div>
+    </div>
+</ion-header>
+<ion-content>
+    <div class="product_wrapper">
+        <div class="product_top_display">
+          <div class="fav_circle fav"></div>
+            <ion-slides pager="false" #mySlider class="hm_service_slide"  (ionSlideDidChange)="slideChanged()">
+                <ion-slide>
+                    <img src="../../assets/imgs/img1.png">
+                </ion-slide>
+                <ion-slide>
+                    <img src="../../assets/imgs/img1.png">
+                </ion-slide>
+                <ion-slide>
+                    <img src="../../assets/imgs/img1.png">
+                </ion-slide>
+            </ion-slides>
+        </div>
+        <div class="product_image_list">
+            <ion-slides loop="true" slidesPerView="4">
+                <ion-slide (click)="goToSlide(0)">
+                    <div class="product_image_circle"  [ngClass]="{'active' : slidertab == 0}" >
+                      <img src="../../assets/imgs/pr1.png">
+                    </div>
+                </ion-slide>
+                <ion-slide  (click)="goToSlide(1)">
+                    <div class="product_image_circle" [ngClass]="{'active' : slidertab == 1}">
+                        <img src="../../assets/imgs/pr2.png">
+                      </div>
+                </ion-slide>
+                <ion-slide  (click)="goToSlide(2)">
+                    <div class="product_image_circle" [ngClass]="{'active' : slidertab == 2}">
+                        <img src="../../assets/imgs/pr1.png">
+                      </div>
+                </ion-slide>
+                <ion-slide  (click)="goToSlide(2)">
+                    <div class="product_image_circle" [ngClass]="{'active' : slidertab == 3}">
+                        <img src="../../assets/imgs/pr2.png">
+                      </div>
+                </ion-slide>
+            </ion-slides>
+        </div>
+        <div class="product_header">
+          <div class="product_watermark">
+            <h2>Nike Flex</h2>
+            <h4>Nike Flex</h4>
+          </div>
+          <p>Contact Running Shoes</p>
+          <h6>Item # 9536</h6>
+          <div class="product_spec">
+            <ion-row>
+              <ion-col col-8 class="p0">
+                <h5>SELECT COLOR</h5>
+                <ul>
+                  <li id="custom_check_button">
+                    <label>
+                      <input id="1" type="radio" name="services" value="A">
+                      <p><img src="../../assets/imgs/shade1.png"></p>
+                    </label>
+                  </li>
+                  <li id="custom_check_button">
+                    <label>
+                      <input id="2" type="radio" name="services" value="B">
+                      <p><img src="../../assets/imgs/shade2.png"></p>
+                    </label>
+                  </li>
+                  <li id="custom_check_button">
+                    <label>
+                      <input id="3" type="radio" name="services" value="C">
+                      <p><img src="../../assets/imgs/shade3.png"></p>
+                    </label>
+                  </li>
+                  <li id="custom_check_button">
+                    <label>
+                      <input id="4" type="radio" name="services" value="D">
+                      <p><img src="../../assets/imgs/shade4.png"></p>
+                    </label>
+                  </li>
+                </ul>
+              </ion-col>
+              <ion-col col-4  class="p0">
+                  <h5>SELECT QTY</h5>
+                  <div class="increment_div">
+                    <button class="sub"  (click)="sub()">-</button>
+                    <div class="counter_circle">{{count}}</div>
+                    <button class="add" (click)="add()" >+</button>
+                  </div>
+                </ion-col>
+            </ion-row>
+          </div>
+          <div class="size_chart">
+            <h5>SELECT SIZE</h5>
+            <ul>
+              <li id="custom_check_button">
+                <label>
+                  <input id="5" type="radio" name="services" value="A">
+                  <p>S</p>
+                </label>
+              </li>
+              <li id="custom_check_button">
+                <label>
+                  <input id="6" type="radio" name="services" value="B">
+                  <p>M</p>
+                </label>
+              </li>
+              <li id="custom_check_button">
+                <label>
+                  <input id="7" type="radio" name="services" value="C">
+                  <p>L</p>
+                </label>
+              </li>
+              <li id="custom_check_button">
+                <label>
+                  <input id="8" type="radio" name="services" value="D">
+                  <p>XL</p>
+                </label>
+              </li>
+              <button ion-button class="seeall floatRight">Size Chart</button>
+              <div class="clear"></div>
+            </ul>
+          </div>
+          <div class="description">
+            <h5>DESCRIPTION</h5>
+            <p>
+              Stay firmly rooted on the ground no matter how you stretch or stride with the Nike Flex Contact!
+               These ultra-flexible running shoes boast
+               woven pattered uppers and a lightweight traction outsole for style and comfort. Take the day in style with the Nike Flex Contact!
+            </p>
+          </div>
+        </div>
+    </div>
+</ion-content>
+<ion-footer padding>
+  <button ion-button class="login_btn" (click)="addcart()">ADD TO CART</button>
+</ion-footer>

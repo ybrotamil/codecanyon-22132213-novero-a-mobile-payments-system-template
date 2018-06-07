@@ -1,0 +1,52 @@
+<ion-header>
+    <div class="nav_header nav_white_header">
+        <button class="nav_btn nav_back_dark floatLeft" (click)="back()">
+        </button>
+        <div class="nav_header_title floatLeft">
+            <h5>Add Address</h5>
+        </div>
+        <button class="nav_btn floatRight nav_search_dark">
+            </button>
+        <div class="clear"></div>
+    </div>
+</ion-header>
+<ion-content padding>
+  <div class="add_address">
+    <ion-item>
+      <ion-input type="text" placeholder="Address 1"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-input type="text" placeholder="Address 2"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-select>
+            <ion-option value="1" selected>State</ion-option>
+            <ion-option value="2"></ion-option>
+        </ion-select>
+    </ion-item>
+    <ion-item>
+        <ion-select>
+            <ion-option value="1" selected>City</ion-option>
+            <ion-option value="2">Kerala</ion-option>
+        </ion-select>
+    </ion-item>
+    <ion-item>
+        <ion-select>
+            <ion-option value="1" selected>Landmark</ion-option>
+            <ion-option value="2"></ion-option>
+        </ion-select>
+    </ion-item>
+    <ion-item>
+        <ion-select>
+            <ion-option value="1" selected>Place</ion-option>
+            <ion-option value="2"></ion-option>
+        </ion-select>
+    </ion-item>
+    <ion-item>
+        <ion-input type="text" placeholder="Phone Number"></ion-input>
+    </ion-item>
+  </div>
+</ion-content>
+<ion-footer padding>
+  <button ion-button class="login_btn">SAVE ADDRESS</button>
+</ion-footer>

@@ -1,0 +1,120 @@
+<ion-header class="theme_background">
+  <div class="nav_header">
+    <button ion-button class="nav_btn floatLeft nav_back" (click)="back()"></button>
+    <div class="nav_header_title floatLeft">
+      <h5>Mobile Prepaid</h5>
+    </div>
+    <button ion-button class="nav_btn floatRight nav_option"></button>
+    <button ion-button class="nav_btn floatRight nav_search"></button>
+    <div class="clear"></div>
+  </div>
+</ion-header>
+<ion-content padding>
+<div class="segement_wrapper">
+  <h4>Electricity Bill</h4>
+  <div class="segement_tab">
+    <ul  radio-group>
+      <li><ion-radio value="1" class="floatLeft" (click)="tab_swap('active')" checked></ion-radio> <ion-label class="floatLeft">Elec Board</ion-label>
+      <div class="clear"></div></li>
+      <li><ion-radio value="2" class="floatLeft" (click)="tab_swap('inactive')"></ion-radio> <ion-label class="floatLeft">Apartments</ion-label>
+      <div class="clear"></div>
+      </li>
+    </ul>
+  </div>
+  <div class="segement_tab_content" [hidden]="tab=='inactive'">
+      <ion-item>
+            <ion-select [(ngModel)]="state">
+                <ion-option value="1" selected>State</ion-option>
+                <ion-option value="2">Maharastra</ion-option>
+                <ion-option value="2">Karnataka</ion-option>
+                <ion-option value="2">Goa</ion-option>
+                <ion-option value="2">Assam</ion-option>
+                <ion-option value="2">Delhi</ion-option>
+            </ion-select>
+      </ion-item>
+      <br>
+      <ion-item>
+          <ion-select [(ngModel)]="board">
+              <ion-option value="1" selected>Electricity board</ion-option>
+              <ion-option value="2" selected>Power on Power</ion-option>
+              <ion-option value="3" selected>Sahya Energy</ion-option>
+              <ion-option value="4" selected>BGR Elect</ion-option>
+          </ion-select>
+    </ion-item>
+      <div class="mobile_number">
+        <input class="" placeholder="Consumer no.">
+        <div class="clear"></div>
+     </div>
+     <div class="check_payment">
+        <ion-checkbox class="floatLeft"></ion-checkbox>
+        <ion-label class="floatLeft"><p><strong>Instant Payment</strong> From Novero wallet balance</p></ion-label>
+        <div class="clear"></div>
+     </div>
+     <button ion-button class="transfer" (click)="proceed()">Proceed to Recharge</button>
+
+  </div>
+  <div class="segement_tab_content" [hidden]="tab=='active'">
+      <div class="on_demo">
+          <img src="../../assets/imgs/error.png"><br>
+          This content is not available on demo
+        </div>
+    </div>
+    <div class="proceed_wrapper">
+        <div class="proceed_tab">
+          <ul>
+            <li [class.active]="tab1 == 'active1'" (click)="tab_swap1('active1')">Hot Deals</li>
+            <li [class.active]="tab1 == 'inactive1'" (click)="tab_swap1('inactive1')">Coupons</li>
+          </ul>
+        </div>
+        <div class="proceed_content" [hidden]="tab1=='inactive1'">
+          <ul>
+            <li>
+              <div class="circle">
+
+              </div>
+              <div class="detail">
+                <h5>Flat 10% Off</h5>
+                <p>Novero</p>
+              </div>
+              <div class="add_btn" (click)="promo()">
+    Free
+              </div>
+              <div class="clear"></div>
+            </li>
+            <li>
+              <div class="circle">
+
+              </div>
+              <div class="detail">
+                <h5>Flat 10% Off</h5>
+                <p>Novero</p>
+              </div>
+              <div class="add_btn" (click)="promo()">
+    Free
+              </div>
+              <div class="clear"></div>
+            </li>
+            <li>
+              <div class="circle">
+
+              </div>
+              <div class="detail">
+                <h5>Flat 10% Off</h5>
+                <p>Novero</p>
+              </div>
+              <div class="add_btn" (click)="promo()">
+    Free
+              </div>
+              <div class="clear"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="proceed_content" [hidden]="tab1=='active1'">
+            <div class="on_demo">
+                <img src="../../assets/imgs/error.png"><br>
+                This content is not available on demo
+              </div>
+          </div>
+      </div>
+</div>
+</ion-content>

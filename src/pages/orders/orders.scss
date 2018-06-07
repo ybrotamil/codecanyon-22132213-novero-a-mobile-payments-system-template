@@ -1,0 +1,184 @@
+page-orders {
+  .home_search_bar{
+    padding: 15px;
+    padding-bottom:20px;
+    background: none;
+    .searchbar-input-container{
+        .searchbar-search-icon{
+           display: none !important;
+        }
+        .searchbar-input{
+            padding:0px;
+            height: 50px;
+            background-color: rgba(101,91,133,0.5) !important;
+            box-shadow: none;
+            border-radius:30px;
+            background: url('../assets/imgs/search.png');
+            background-position: right 15px top 12px !important;
+            background-size: 26px !important;
+            background-repeat: no-repeat !important;
+            color: #fff;
+            font-size: 30px;
+            padding-left:20px;
+            font-weight: 500;
+            padding-right:50px;
+        }
+
+        ::-webkit-input-placeholder {
+            color:#675b85;
+          }
+    }
+  }
+  .orders_wrapper{
+    width:100%;
+    .orders_empty{
+      h4{
+        color: #959595;
+        text-align: center;
+        font-weight: 600;
+      }
+      .order_nil_empty{
+        width:100%;
+        text-align: center;
+        padding: calc(100% - 320px);
+        img{
+          width:100px;
+        }
+        p{
+          width:100%;
+          text-align: center;
+          color: #959595;
+          font-size:18px;
+          font-weight:300;
+        }
+        hr{
+          border:2px solid #d4d4d4;
+          width:35px;
+          margin:0 auto;
+          border-radius: 20px;
+          height:0px;
+        }
+      }
+    }
+    .order_list{
+      width: 100%;
+      overflow: scroll;
+      .order_list_head{
+        width: 100%;
+        height:50px;
+        h4{
+          width:100%;
+          color: #959595;
+          text-align: center;
+          font-weight: 600;
+        }
+        hr{
+          width:20px;
+          border:2px solid #da1c5c;
+          height:0px;
+          margin:0 auto;
+          border-radius: 20px;
+        }
+        .nav_btn{
+          position:absolute;
+          right:0px;
+          top:0px;
+          background: url('../assets/imgs/filter.png');
+        }
+      }
+      ul{
+        width: 100%;
+        height:calc(100% - 50px);
+        overflow: scroll;
+        margin:0px;
+        padding:0px;
+        padding-top: 15px;
+        .list{
+          .item{
+            border-bottom: 1px solid #c2c2c2 !important;
+            padding-bottom: 20px !important;
+            padding-top: 20px !important;
+            .item-inner{
+              border:none !important;
+              .input-wrapper{
+                .label {
+                  margin:0px;
+                  .list_top{
+                    width:100%;
+                    padding-bottom: 10px;
+                    h5{
+                      color: #646464;
+                      font-size: 20px;
+                      font-weight: 600;
+                    }
+                    p{
+                      color: #a8a8a8;
+                      font-size: 14px;
+                    }
+                  }
+                  .list_bottom{
+                    width:100%;
+                    padding-top: 10px;
+                    .list_circle{
+                      width: 85px;
+                      height:85px;
+                      border-radius: 50%;
+                      background: #646464;
+                      float: left;
+                      img{
+                        width:100%;
+                        height:100%;
+                        object-fit: cover;
+                        object-position: center;
+                        border-radius: 50%;
+                      }
+                    }
+                    .list_detail{
+                      width: calc(100% - 85px);
+                      float: left;
+                      padding:5px;
+                      padding-left:15px;
+                      h4{
+                        color: #5a5a5a;
+                        font-size: 25px;
+                        font-weight:600;
+                      }
+                      h6{
+                        color: #5a5a5a;
+                        font-size: 18px;
+                        font-size: 15px;
+                        font-weight: 500;
+                        padding-bottom:10px;
+                      }
+                    }
+                    .price{
+                      color: #212121;
+                      font-weight:600;
+                      font-size: 16px;
+                      padding: 5px;
+                    }
+                    .order_status{
+                      color: #909090;
+                      font-size: 16px;
+                      padding: 5px;
+                      background-repeat: no-repeat !important;
+                      background-position: right !important;
+                      background-size: 18px !important;
+                      padding-right: 30px;
+                    }
+                    .approve{
+                      background: url('../assets/imgs/approved.png');
+                    }
+                    .reject{
+                      background: url('../assets/imgs/reject.png');
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+<ion-header>
+    <div class="nav_header nav_white_header">
+        <button class="nav_btn nav_back_dark floatLeft" (click)="back()">
+        </button>
+        <div class="nav_header_title floatLeft">
+            <h5>Evacay Travels</h5>
+            <p class="floatLeft">A/C, Dolby, Multiaxile</p>
+            <p class="floatRight">Thu, 23 Apr</p>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+  </ion-header>
+  <ion-content padding >
+    <div class="boarding_wrapper">
+      <div class="boarding_tab">
+        <li [class.active]="tab == 'active'" (click)="tab_swap('active')">
+          <p>Boarding</p>
+          <h6>1:00 pm</h6>
+          <hr>
+        </li>
+        <li [class.active]="tab == 'inactive'" (click)="tab_swap('inactive')">
+            <p>Drop</p>
+            <h6>1:00 pm</h6>
+            <hr>
+        </li>
+        <div class="clear"></div>
+      </div>
+      <div class="boarding_tab_content" [hidden]="tab=='inactive'">
+          <div class="radio_div" radio-group>
+              <ion-row>
+                <ion-col>
+                    <ion-radio value="1" checked class="floatLeft"></ion-radio>
+                    <ion-label class="floatLeft">New Delhi</ion-label>
+                    <div class="clear"></div>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                    <ion-radio value="2" class="floatLeft"></ion-radio>
+                    <ion-label class="floatLeft">Bengaluru</ion-label>
+                    <div class="clear"></div>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                  <ion-col>
+                      <ion-radio value="3"  class="floatLeft"></ion-radio>
+                      <ion-label class="floatLeft">Pune</ion-label>
+                      <div class="clear"></div>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                      <ion-radio value="4" class="floatLeft"></ion-radio>
+                      <ion-label class="floatLeft">Kochin</ion-label>
+                      <div class="clear"></div>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-radio value="5"  class="floatLeft"></ion-radio>
+                        <ion-label class="floatLeft">Chennai</ion-label>
+                        <div class="clear"></div>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col>
+                        <ion-radio value="6" class="floatLeft"></ion-radio>
+                        <ion-label class="floatLeft">Trivandrum</ion-label>
+                        <div class="clear"></div>
+                    </ion-col>
+                  </ion-row>
+            </div>
+      </div>
+      <div class="boarding_tab_content" [hidden]="tab=='active'">
+          <div class="radio_div" radio-group>
+              <ion-row>
+                <ion-col>
+                    <ion-radio value="1" checked class="floatLeft"></ion-radio>
+                    <ion-label class="floatLeft">New Delhi</ion-label>
+                    <div class="clear"></div>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                    <ion-radio value="2" class="floatLeft"></ion-radio>
+                    <ion-label class="floatLeft">Bengaluru</ion-label>
+                    <div class="clear"></div>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                  <ion-col>
+                      <ion-radio value="3"  class="floatLeft"></ion-radio>
+                      <ion-label class="floatLeft">Pune</ion-label>
+                      <div class="clear"></div>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                      <ion-radio value="4" class="floatLeft"></ion-radio>
+                      <ion-label class="floatLeft">Kochin</ion-label>
+                      <div class="clear"></div>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-radio value="5"  class="floatLeft"></ion-radio>
+                        <ion-label class="floatLeft">Chennai</ion-label>
+                        <div class="clear"></div>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col>
+                        <ion-radio value="6" class="floatLeft"></ion-radio>
+                        <ion-label class="floatLeft">Trivandrum</ion-label>
+                        <div class="clear"></div>
+                    </ion-col>
+                  </ion-row>
+            </div>
+      </div>
+    </div>
+  </ion-content>
+  <ion-footer padding>
+      <button ion-button class="login_btn">Next</button>
+</ion-footer>
+

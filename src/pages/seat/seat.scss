@@ -1,0 +1,115 @@
+page-seat {
+
+  .nav_header_title{
+    width: calc(100% - 60px) !important;
+  }
+  .search_list_background{
+    background: #e7edef;
+  }
+  .nav_header_title {
+    p{
+      margin: 0px;
+      padding:0px;
+      text-align:left;
+      color: #afafaf;
+      font-size: 12px;
+    }
+  }
+
+  .seat_wrapper{
+    width: 100%;
+    text-align: center;
+    .seat_index{
+      width: 100%;
+      background: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      color: #959595;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 10px;
+      display: inline-block;
+      .seat{
+        background-repeat: no-repeat !important;
+        background-position: left !important;
+        background-size: 20px !important;
+        font-size: 13px;
+        padding:5px;
+        padding-left: 35px;
+      }
+      .gents{
+        background: url("../assets/imgs/seat_gents.png");
+      }
+      .seats{
+        background: url("../assets/imgs/seat_available.png");
+      }
+      .ladies{
+        background: url("../assets/imgs/seat_ladies.png");
+      }
+      .selected{
+        background: url("../assets/imgs/seat_selected.png");
+      }
+    }
+    .seat_positioning{
+      background: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      display: inline-block;
+      .seat_driver{
+        width:40px;
+        height:40px;
+        background: url("../assets/imgs/driver.png");
+        background-position: center;
+        background-size:35px;
+        background-repeat: no-repeat !important;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+      ul{
+        padding: 0px;
+        margin:0px;
+        li{
+          list-style: none;
+          display: inline-block;
+          #seat_button {margin:4px;background-color:#fff;overflow:auto;color:#000;position: relative;width:35px;height: 35px;outline:none;}
+          #seat_button p{margin:0px;position: absolute;left: 0px;right: 0px;top: 0px;bottom: 0px;padding: 4px;background: url("../../assets/imgs/seat_available.png");background-repeat: no-repeat;background-position: center;background-size: 30px;}
+          #seat_button label {width:100%;}
+          #seat_button label span {text-align:center;display:block;}
+          #seat_button label input {position:absolute;top:-20px;}
+          #seat_button input:checked + p {background: url("../assets/imgs/seat_selected.png");color:#fff;margin:0px;background-repeat: no-repeat;background-position: center;background-size: 30px;}
+        }
+      }
+    }
+  }
+  .seat_footer{
+    width: 100%;
+    background: #fff;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    h6{
+      color: #898989;
+      font-weight: 400;
+      margin:0px;
+      padding:0px;
+      padding-bottom:5px;
+    }
+    p{
+      color: #494848;
+      margin:0px;
+      padding:0px;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .login_btn{
+      width: 100%;
+      height:40px;
+      border-radius: 20px;
+      background: #da1c5c;
+      color: #fff;
+      font-size: 16px;
+      text-transform: capitalize;
+  }
+  }
+}

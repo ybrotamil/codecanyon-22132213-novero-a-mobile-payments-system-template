@@ -1,0 +1,165 @@
+<ion-header class="theme_background">
+    <div class="nav_header">
+        <button ion-button class="nav_btn floatLeft nav_menu" menuToggle></button>
+        <div class="nav_header_title floatLeft">
+            <img src="../assets/imgs/logo_white.png">
+        </div>
+        <button ion-button class="nav_btn floatRight nav_option"></button>
+        <div class="clear"></div>
+    </div>
+    <div class="nav_header">
+        <ion-searchbar class="home_search_bar" placeholder="search">
+        </ion-searchbar>
+    </div>
+</ion-header>
+<ion-content padding>
+    <div class="orders_wrapper heightFull">
+        <!-- <div class="orders_empty heightFull">
+        <h4>ORDERS</h4>
+        <div class="order_nil_empty">
+            <img src="assets/imgs/order_none.png">
+            <p>You have not made any<br> orders yet</p>
+            <hr>
+        </div>
+    </div> -->
+        <div class="order_list heightFull">
+            <div class="order_list_head">
+                <h4>ORDERS</h4>
+                <button ion-button class="nav_btn">
+        </button>
+                <hr>
+                <div class="clear"></div>
+            </div>
+            <ul>
+                <ion-list>
+                    <ion-item (click)="orderdetail()">
+                        <div class="list_top">
+                            <h5>Order No. 331245855</h5>
+                            <p>14 june 2017, 05:00 pm</p>
+                        </div>
+                        <div class="list_bottom">
+                            <div class="list_circle">
+                                <img src="assets/imgs/product1.png">
+                            </div>
+                            <div class="list_detail">
+                                <h4>Nike Flex</h4>
+                                <h6>Contact Running Shoes</h6>
+                                <div>
+                                    <div class="floatLeft price">$ 189</div>
+                                    <div class="floatRight order_status approve">Order Delivered</div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </ion-item>
+                    <ion-item (click)="orderdetail()">
+                        <div class="list_top">
+                            <h5>Order No. 331245855</h5>
+                            <p>14 june 2017, 05:00 pm</p>
+                        </div>
+                        <div class="list_bottom">
+                            <div class="list_circle">
+                                <img src="assets/imgs/product1.png">
+                            </div>
+                            <div class="list_detail">
+                                <h4>Nike Flex</h4>
+                                <h6>Contact Running Shoes</h6>
+                                <div>
+                                    <div class="floatLeft price">$ 189</div>
+                                    <div class="floatRight order_status reject">Order Cancelled</div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </ion-item>
+                    <ion-item (click)="orderdetail()">
+                        <div class="list_top">
+                            <h5>Order No. 331245855</h5>
+                            <p>14 june 2017, 05:00 pm</p>
+                        </div>
+                        <div class="list_bottom">
+                            <div class="list_circle">
+                                <img src="assets/imgs/product1.png">
+                            </div>
+                            <div class="list_detail">
+                                <h4>Nike Flex</h4>
+                                <h6>Contact Running Shoes</h6>
+                                <div>
+                                    <div class="floatLeft price">$ 189</div>
+                                    <div class="floatRight order_status approve">Order Delivered</div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </ion-item>
+                    <ion-item (click)="orderdetail()">
+                        <div class="list_top">
+                            <h5>Order No. 331245855</h5>
+                            <p>14 june 2017, 05:00 pm</p>
+                        </div>
+                        <div class="list_bottom">
+                            <div class="list_circle">
+                                <img src="assets/imgs/product1.png">
+                            </div>
+                            <div class="list_detail">
+                                <h4>Nike Flex</h4>
+                                <h6>Contact Running Shoes</h6>
+                                <div>
+                                    <div class="floatLeft price">$ 189</div>
+                                    <div class="floatRight order_status reject">Order Cancelled</div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </ion-item>
+                    <ion-item (click)="orderdetail()">
+                        <div class="list_top">
+                            <h5>Order No. 331245855</h5>
+                            <p>14 june 2017, 05:00 pm</p>
+                        </div>
+                        <div class="list_bottom">
+                            <div class="list_circle">
+                                <img src="assets/imgs/product1.png">
+                            </div>
+                            <div class="list_detail">
+                                <h4>Nike Flex</h4>
+                                <h6>Contact Running Shoes</h6>
+                                <div>
+                                    <div class="floatLeft price">$ 189</div>
+                                    <div class="floatRight order_status approve">Order Delivered</div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </ion-item>
+                    <ion-item (click)="orderdetail()">
+                        <div class="list_top">
+                            <h5>Order No. 331245855</h5>
+                            <p>14 june 2017, 05:00 pm</p>
+                        </div>
+                        <div class="list_bottom">
+                            <div class="list_circle">
+                                <img src="assets/imgs/product1.png">
+                            </div>
+                            <div class="list_detail">
+                                <h4>Nike Flex</h4>
+                                <h6>Contact Running Shoes</h6>
+                                <div>
+                                    <div class="floatLeft price">$ 189</div>
+                                    <div class="floatRight order_status reject">Order Cancelled</div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </ion-item>
+                </ion-list>
+            </ul>
+        </div>
+    </div>
+</ion-content>

@@ -1,0 +1,49 @@
+<ion-header class="theme_background">
+    <div class="nav_header">
+      <button ion-button class="nav_btn floatLeft nav_back" (click)="back()"></button>
+      <div class="nav_header_title floatLeft">
+        <h5>Account Details</h5>
+      </div>
+      <button ion-button class="nav_btn floatRight nav_option"></button>
+      <button ion-button class="nav_btn floatRight nav_search"></button>
+      <div class="clear"></div>
+    </div>
+</ion-header>
+<ion-content padding>
+    <div class="pay_wrapper">
+        <ion-row>
+          <ion-col col-12>
+              <h4>Add new Card</h4>
+          </ion-col>
+        </ion-row>
+          <div class="contact_list">
+            <ion-row>
+              <ion-col col-12>
+                  <h6>CARD NUMBER</h6>
+                <ion-input placeholder="012 2336 001254 2255"></ion-input>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-5>
+                <ion-input placeholder="DD/MM"></ion-input>
+              </ion-col>
+              <ion-col col-1>
+                <p>/</p>
+              </ion-col>
+              <ion-col col-6>
+                <ion-input placeholder="YYYY"></ion-input>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-12>
+                    <h6>CARD HOLDER NAME</h6>
+                  <ion-input placeholder="ANN ALEXANDER"></ion-input>
+                </ion-col>
+              </ion-row>
+          </div>
+    </div>
+</ion-content>
+<ion-footer padding>
+  <button ion-button class="transfer">ADD CARD</button>
+</ion-footer>
+

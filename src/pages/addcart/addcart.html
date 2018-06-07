@@ -1,0 +1,138 @@
+<ion-header>
+  <div class="nav_header nav_white_header">
+      <button class="nav_btn nav_back_dark floatLeft" (click)="back()">
+      </button>
+      <div class="nav_header_title floatLeft">
+          <h5>Add Cart</h5>
+      </div>
+      <button class="nav_btn floatRight nav_cart_dark">
+        </button>
+      <button class="nav_btn floatRight nav_search_dark">
+          </button>
+      <div class="clear"></div>
+  </div>
+</ion-header>
+<ion-content padding>
+  <div class="addcart_wrapper">
+      <div class="address">
+        <h5 class="floatLeft">DELIVERS TO</h5>
+        <button class="seeall">Edit</button>
+        <div class="clear"></div>
+        <br>
+        <div class="loc_icon floatLeft">
+        </div>
+        <div class="address_bay floatRight">
+          <p>
+              Techware solution, Carnival Infopark, Phase 1, Kusumagiri (po), Kakkanad, Kochi
+          </p>
+        </div>
+        <div class="clear"></div>
+        <br>
+        <br>
+      </div>
+      <div class="cart_item">
+          <h5 class="">ITEMS IN YOUR CART</h5>
+          <ul>
+            <li>
+              <div class="cart_left floatLeft">
+                <div class="cart_circle">
+                  <img src="../../assets/imgs/pr1.png">
+                </div>
+              </div>
+              <div class="cart_right floatRight">
+                <h5>Nike Flex</h5>
+                <p>Contact running shoes</p>
+                <h4>$ 120</h4>
+                <div class="color_circle">
+                  <img src="../../assets/imgs/shade1.png">
+                </div>
+                <div class="size_circle">
+                  M
+                </div>
+                <div class="increment_div">
+                    <button class="sub"  (click)="sub()">-</button>
+                    <div class="counter_circle">{{count}}</div>
+                    <button class="add" (click)="add()" >+</button>
+                </div>
+                <div class="clear"></div>
+                <div class="bottom_bay">
+                    <button ion-button class="remove floatLeft">Remove</button>
+                    <button ion-button class="edit floatRight" (click)="toggleGroup(0)" [ngClass]="{active:isGroupShown(0)}">More</button>
+                    <div class="clear"></div>
+                </div>
+              </div>
+              <div class="clear"></div>
+              <div class="" *ngIf="isGroupShown(0)">
+                  <div class="order_detail_content">
+                      <h6>Seller Details</h6>
+                      <div class="seller_photo">
+                        <img src="../../assets/imgs/nike.png">
+                      </div>
+                      <div class="seller_detail">
+                        <h5>Nike Authorised Dealer</h5>
+                        <p>Gurgon</p>
+                      </div>
+                      <div class="clear"></div>
+                  </div>
+                  <div class="mobile_number">
+                      <input class="" placeholder="Seller Promocode">
+                      <div class="apply">
+                        Apply
+                      </div>
+                      <div class="clear"></div>
+                  </div>
+              </div>
+            </li>
+          </ul>
+      </div>
+      <div class="download_list">
+          <ul>
+              <h5>Payment Details</h5>
+            <li>
+              <ion-row class="p0">
+                <ion-col col-6  class="p0">
+                  Order Total
+                </ion-col>
+                <ion-col col-6 class="p0 textRight">
+                  $ 201
+                </ion-col>
+              </ion-row>
+              <div class="clear"></div>
+            </li>
+            <li>
+                <ion-row class="p0">
+                  <ion-col col-6  class="p0">
+                    Shipping
+                  </ion-col>
+                  <ion-col col-6 class="p0 textRight">
+                   + $ 10
+                  </ion-col>
+                </ion-row>
+                <div class="clear"></div>
+            </li>
+            <hr>
+            <li>
+                <ion-row class="p0">
+                  <ion-col col-6  class="p0">
+                    <strong>Bag Total</strong>
+                  </ion-col>
+                  <ion-col col-6 class="p0 textRight">
+                   <strong>$ 211</strong>
+                  </ion-col>
+                </ion-row>
+                <div class="clear"></div>
+            </li>
+            <div class="mobile_number">
+                <input class="" placeholder="App Promocode">
+                <div class="apply">
+                  Apply
+                </div>
+                <div class="clear"></div>
+            </div>
+          </ul>
+      </div>
+  </div>
+</ion-content>
+<ion-footer padding>
+    <button ion-button class="login_btn">ADD TO CART</button>
+</ion-footer>

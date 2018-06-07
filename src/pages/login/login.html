@@ -1,0 +1,28 @@
+
+<ion-content padding class="login_bg">
+    <div class="login_logo">
+        <img src="assets/imgs/logo_white.png">
+    </div>
+    <div class="login_content">
+      <h5>Login</h5>
+      <hr>
+      <ion-list>
+          <ion-item>
+              <ion-input placeholder="Email"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-input placeholder="Password" type="passsword"></ion-input>
+          </ion-item>
+      </ion-list>
+      <button ion-button class="login_btn" (click)="verify()">
+        Login Now
+      </button>
+      <p (click)="forgot()">Forgot Password?</p>
+      <p class="pt0">new user? simply create a new account<br>
+        <br>
+        <strong (click)="signup()">here</strong>
+      </p>
+
+    </div>
+
+</ion-content>

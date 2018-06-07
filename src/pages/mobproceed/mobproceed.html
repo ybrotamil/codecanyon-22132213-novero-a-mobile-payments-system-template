@@ -1,0 +1,70 @@
+<ion-header class="theme_background">
+    <div class="nav_header">
+      <button ion-button class="nav_btn floatLeft nav_back" (click)="back()"></button>
+      <div class="nav_header_title floatLeft">
+        <h5>Mobile Prepaid</h5>
+      </div>
+      <button ion-button class="nav_btn floatRight nav_option"></button>
+      <button ion-button class="nav_btn floatRight nav_search"></button>
+      <div class="clear"></div>
+    </div>
+</ion-header>
+<ion-content padding>
+  <div class="proceed_wrapper">
+    <div class="proceed_tab">
+      <ul>
+        <li [class.active]="tab == 'active'" (click)="tab_swap('active')">Hot Deals</li>
+        <li [class.active]="tab == 'inactive'" (click)="tab_swap('inactive')">Coupons</li>
+      </ul>
+    </div>
+    <div class="proceed_content" [hidden]="tab=='inactive'">
+      <ul>
+        <li>
+          <div class="circle">
+
+          </div>
+          <div class="detail">
+            <h5>Flat 10% Off</h5>
+            <p>Novero</p>
+          </div>
+          <div class="add_btn" (click)="promo()">
+Free
+          </div>
+          <div class="clear"></div>
+        </li>
+        <li>
+          <div class="circle">
+
+          </div>
+          <div class="detail">
+            <h5>Flat 10% Off</h5>
+            <p>Novero</p>
+          </div>
+          <div class="add_btn" (click)="promo()">
+Free
+          </div>
+          <div class="clear"></div>
+        </li>
+        <li>
+          <div class="circle">
+
+          </div>
+          <div class="detail">
+            <h5>Flat 10% Off</h5>
+            <p>Novero</p>
+          </div>
+          <div class="add_btn" (click)="promo()">
+Free
+          </div>
+          <div class="clear"></div>
+        </li>
+      </ul>
+    </div>
+    <div class="proceed_content" [hidden]="tab=='active'">
+        <div class="on_demo">
+            <img src="../../assets/imgs/error.png"><br>
+            This content is not available on demo
+          </div>
+      </div>
+  </div>
+</ion-content>

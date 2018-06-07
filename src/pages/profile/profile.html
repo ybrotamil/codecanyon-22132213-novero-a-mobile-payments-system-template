@@ -1,0 +1,36 @@
+<ion-header class="theme_background">
+    <div class="nav_header">
+        <button ion-button class="nav_btn floatLeft nav_menu" menuToggle></button>
+        <div class="nav_header_title floatLeft">
+            <ion-searchbar class="home_search_bar" placeholder="search">
+            </ion-searchbar>
+        </div>
+        <div class="clear"></div>
+    </div>
+</ion-header>
+<ion-content>
+    <div class="profile_wrapper">
+        <div class="profile_banner">
+            <ion-fab bottom right>
+                <button ion-fab class="theme_light" (click)="editprofile()"><ion-icon name="md-create"></ion-icon></button>
+            </ion-fab>
+            <div class="profie_circle">
+
+            </div>
+            <h5>Ann Alexander</h5>
+            <p>annalex@mail.com</p>
+            <hr>
+        </div>
+        <div class="profile_content">
+            <ul>
+                <li class="menu1" (click)="changepass()">Change Password</li>
+                <li class="menu2">Notification</li>
+                <li class="menu3">Wallet</li>
+                <li class="menu4">Shopping</li>
+                <li class="menu5" (click)="address()">Address Book</li>
+                <li class="menu6">Settings</li>
+                <li class="menu7" (click)="logout()">Logout</li>
+            </ul>
+        </div>
+    </div>
+</ion-content>
