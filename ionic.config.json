@@ -1,0 +1,8 @@
+{
+  "name": "noveroAppTemplate",
+  "app_id": "32cce3ed",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
